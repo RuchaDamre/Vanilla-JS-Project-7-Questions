@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(235, 245, 246);
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 55px;
+    text-shadow: 3px 3px 3px #ababab;
+    color: goldenrod;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 97svh;
+}
+
+.btn {
+    color: goldenrod;
+    font-size: 23px !important;
+    align-self: center;
+    transition: all 0.3s linear;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.minus {
+    display: none !important;
+}
+
+
+.btn:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.data {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 2px 15px 2px 15px;
+    border-radius: 5px;
+    width: 43vw;
+    box-shadow: 3px 3px 5px 3px rgb(154, 180, 182);
+    margin-bottom: 30px;
+}
+
+.que {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr {
+    width: 550px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#text {
+    font-size: 17px;
+    margin-top: 0;
+    color: rgb(113, 130, 131);
+    letter-spacing: 0;
+}
+
+.ans {
+    display: none;
+}
+
+.ans_show .ans {
+    display: block;
+}
+
+.ans_show .minus {
+    display: block !important;
+}
+
+.ans_show .plus {
+    display: none !important;
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .data {
+        width: 80vw;
+    }
+
+    .btn {
+        font-size: 14px !important;
+    }
+
+    p {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    #text {
+        font-size: 12px;
+    }
+
+    hr {
+        width: 287px;
+    }
+}
